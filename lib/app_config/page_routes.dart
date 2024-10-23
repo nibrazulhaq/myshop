@@ -1,3 +1,4 @@
+
 import 'package:get/get.dart';
 import 'package:my_shop/screens/checkout_screen.dart';
 import 'package:my_shop/screens/combooffer_screen.dart';
@@ -9,9 +10,7 @@ import 'package:my_shop/screens/payment_screen.dart';
 import 'package:my_shop/screens/settings_screen.dart';
 import 'package:my_shop/screens/start_screen.dart';
 import 'package:my_shop/screens/track_order_screen.dart';
-import 'package:my_shop/screens/transactionhistory_screen.dart';
 import '../screens/registration_screen.dart';
-import '../screens/splash_screen.dart';
 import '../screens/starting_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/login_screen.dart';
@@ -22,10 +21,6 @@ List<GetPage<dynamic>> getPages() {
     GetPage(
       name: '/registration',
       page: () => RegistrationScreen(),
-    ),
-    GetPage(
-      name: '/splashScreen',
-      page: () => SplashScreen(),
     ),
     GetPage(
       name: '/starting',
@@ -81,7 +76,7 @@ List<GetPage<dynamic>> getPages() {
       ),
     ),
     GetPage(
-      name: PaymentScreen.id,
+      name: '/PaymentScreen',
       page: () => PaymentScreen(
         cartItems: [], // This will be replaced when navigating from CheckoutScreen
         totalAmount: 0.0, // This will be replaced when navigating from CheckoutScreen
