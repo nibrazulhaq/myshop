@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'confirming_screen.dart'; // Import the ConfirmationScreen
 
 class PaymentScreen extends StatefulWidget {
-  static const String id = '/payment';
 
   final double totalAmount;
   final List<Map<String, dynamic>> cartItems; // Accept cart items
@@ -11,7 +10,7 @@ class PaymentScreen extends StatefulWidget {
   final String shippingCity; // Accept shipping city
   final String shippingPostalCode; // Accept shipping postal code
 
-  PaymentScreen({
+  const PaymentScreen({super.key,
     required this.totalAmount,
     required this.cartItems,
     required this.shippingAddress,

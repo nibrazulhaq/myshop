@@ -10,10 +10,10 @@ import 'package:my_shop/screens/payment_screen.dart';
 import 'package:my_shop/screens/settings_screen.dart';
 import 'package:my_shop/screens/start_screen.dart';
 import 'package:my_shop/screens/track_order_screen.dart';
-import '../screens/registration_screen.dart';
-import '../screens/starting_screen.dart';
-import 'screens/dashboard_screen.dart';
-import 'screens/login_screen.dart';
+import '../../screens/registration_screen.dart';
+import '../../screens/starting_screen.dart';
+import '../screens/dashboard_screen.dart';
+import '../screens/login_screen.dart';
 
 
 List<GetPage<dynamic>> getPages() {

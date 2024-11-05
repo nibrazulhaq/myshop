@@ -29,7 +29,7 @@ class StartGuideScreen extends StatelessWidget {
             },
             child: Text(
               'Skip',
-              style: TextStyle(color: Colors.white, fontSize: buttonTextSize),
+              style: TextStyle(color: Colors.green, fontSize: buttonTextSize),
             ),
           ),
         ],
@@ -95,11 +95,12 @@ class StartGuideScreen extends StatelessWidget {
               },
               child: Text('Get Started'),
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
                 padding: EdgeInsets.symmetric(
                   vertical: screenWidth < 600 ? 10 : 12,
                   horizontal: screenWidth < 600 ? 16 : 20,
                 ),
-                textStyle: TextStyle(fontSize: buttonTextSize),
+                textStyle: TextStyle(color: Colors.green,fontSize: buttonTextSize),
               ),
             ),
           ],

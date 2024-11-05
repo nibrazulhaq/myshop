@@ -74,6 +74,7 @@ class _ProfileEditScreenState extends State<ProfileEditScreen> {
                     );
                   }
                 },
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 child: Text('Save Changes'),
               ),
             ],

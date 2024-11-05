@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class RegistrationScreen extends StatefulWidget {
-  static const String id = '/registration';
+  const RegistrationScreen({super.key});
+
 
   @override
-  _RegistrationScreenState createState() => _RegistrationScreenState();
+  State<RegistrationScreen> createState() => _RegistrationScreenState();
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
@@ -96,6 +97,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   // Handle sign-up logic here (validate and register the user)
                   Get.toNamed('/start-guide'); // Navigate to dashboard after registration
                 },
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 child: Text('Sign Up'),
               ),
               SizedBox(height: 10),
